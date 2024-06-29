@@ -1,0 +1,142 @@
+/* Base styles */
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.text {
+    flex: 12%;
+}
+
+.image1 {
+    flex-shrink: 0;
+    max-width: 100%; /* Make it responsive */
+}
+
+.image {
+    width: 100%; /* Make it responsive */
+    max-width: 500px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+footer {
+    padding: 20px;
+    background-color: gray;
+    color: black;
+}
+
+.mail {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.mail label {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-container input {
+    padding: 10px 80px 10px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.input-container button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border: none;
+    background-color: #007BFF;
+    color: black;
+    padding: 0 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.p {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    padding: 20px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .text {
+        flex: 100%;
+        text-align: center;
+    }
+
+    .image1 {
+        max-width: 100%;
+    }
+
+    .image {
+        width: 100%;
+        max-width: none;
+    }
+
+    .mail {
+        justify-content: center;
+    }
+
+    .input-container input {
+        padding: 10px;
+    }
+
+    .input-container button {
+        padding: 0 10px;
+    }
+
+    .p {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icons {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .text {
+        font-size: 14px;
+    }
+
+    .input-container input {
+        padding: 8px;
+    }
+
+    .input-container button {
+        padding: 0 8px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}

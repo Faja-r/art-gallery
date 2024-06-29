@@ -1,0 +1,156 @@
+ /* Base styles remain the same */
+
+ .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+} 
+
+.text {
+    flex: 12%;
+    margin-left: 5%;
+}
+
+.image1 {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+.animated-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    animation: blink 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer {
+    padding: 20px;
+    background-color: gray;
+    color: black;
+}
+
+.mail {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.mail label {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-container input {
+    padding: 10px 80px 10px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+} 
+
+.input-container button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border: none;
+    background-color: #007BFF;
+    color: black;
+    padding: 0 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.p {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    padding: 20px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+/* Media queries for responsiveness */
+
+/* For screens up to 768px */
+@media (max-width: 768px) {
+    .text {
+        flex: 1 1 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .image1 {
+        flex: 1 1 100%;
+        margin: 2%;
+        justify-content: center;
+    }
+
+    .mail {
+        justify-content: center;
+    }
+
+    .p {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icons {
+        align-items: center;
+    }
+}
+
+/* For screens up to 480px */
+@media (max-width: 480px) {
+    .input-container input {
+        padding: 10px;
+    }
+
+    .input-container button {
+        padding: 0 10px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}

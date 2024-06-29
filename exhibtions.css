@@ -1,0 +1,83 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .content {
+    width: 100%;
+    margin: 10px auto;
+    padding-top: 150px;
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  footer {
+    padding: 20px;
+    background-color: gray;
+    color: black;
+}
+.mail {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+
+.mail label {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+ .input-container input {
+    padding: 10px 80px 10px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+} 
+
+.input-container button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border: none;
+    background-color: #007BFF;
+    color:black;
+    padding: 0 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.p {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    padding: 20px;
+}
+.icons{
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+               
+}
